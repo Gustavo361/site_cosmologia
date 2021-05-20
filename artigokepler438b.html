@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<section lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/artigo.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Document</title>
+    </head>
+    <header>
+        <div id="logo"><a href="index.html"><img src="img/logo4.png" alt="logo do site" width="80px"></a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cosmologia.html">Cosmologia</a></li>
+                <li><a href="mitologia.html">Mitologia</a></li>
+                <li><a href="histastron.html">História da astronomia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="principal">
+        <article>
+            <div style="margin-top: 10px; text-align: center;">
+                <img src="img/Kepler-438b_2.jpeg" alt="elonzinho" width="80%">
+            </div>
+            <h1 style="text-align: center;">Kepler-438b</h1>
+            <p>Kepler-438b (também conhecido por sua designação Kepler Object of Interest de KOI-3284.01) é um
+                exoplaneta confirmado com quase o tamanho da Terra, é provavelmente rochoso, orbitando dentro da zona
+                habitável da anã vermelha Kepler-438, há cerca de 470 anos-luz (145 pc) a partir da Terra, na
+                constelação de Lyra. O planeta foi descoberto pelo observatório espacial Kepler da NASA usando o método
+                de trânsito, quando o efeito de escurecimento que faz um planeta como ele quando cruza em frente da sua
+                estrela é medido. A NASA anunciou a confirmação do exoplaneta em 6 de janeiro de 2015.É o planeta mais
+                parecido com a Terra conhecido até a data. Porém, se a existência de KOI-4878.01 for confirmada, este
+                passará a ser o planeta mais semelhante à Terra.</p>
+            <h3>Exoplaneta confirmado</h3>
+            <p>Kepler-438b é um exoplaneta com tamanho parecido ao da Terra, tendo um raio de 1,12 vezes ao raio da
+                Terra. O planeta orbita uma anã vermelha, Kepler-438, uma estrela consideravelmente menor e mais fria do
+                que o Sol, uma vez a cada 35,2 dias</p>
+            <h3>Habitabilidade</h3>
+            <p>O planeta foi anunciado como estando situado dentro da zona habitável de Kepler-438, uma região onde a
+                água líquida pode existir na superfície do planeta. Ele foi descrito como sendo um dos planetas mais
+                parecidos como a Terra, em termos de tamanho e temperatura, já encontrado, tendo um Índice de
+                Similaridade com a Terra (ESI) de 0,88, o mais alto conhecido até à data. No entanto, verificou-se que
+                devido a sua estrela-mãe ser de um subtipo de anã vermelha muito ativa, este planeta é submetido a
+                enormes flashes de radiação, a cada poucos cem dias, tempestades muito mais violentas, em torno de dez
+                vezes mais poderosas que qualquer outra já registrada pelo Sol e que seria capaz de esterilizar a vida
+                na Terra.</p>
+            <p>Pesquisadores da Universidade de Warwick concluíram que Kepler-438b não é habitável, afinal de contas,
+                devido à grande quantidade de radiação que recebe.</p>
+        </article>
+    </section>
+
+
+    <section id="form">
+        <div id="form_content">
+            <h3>Deseja receber o resumão de artigos do nosso site?</h3>
+            <span>Com um email semanal pra você ficar atualizado</span>
+            <span id="gratis">É grátis</span>
+            <button onclick="abrirModal()" class="btn"
+                style=" font-size: 13px;font-weight: 600;border-radius: 50px; width: 15%; height:30px; border:1px solid white;">Sim,
+                quero!</button>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div onclick="fecharModal()" class="fechar"
+            style="text-align: center; float: right; width: 20px;height: 20px;background-color:rgb(14, 14,26); border: 0.3px solid white; border-radius: 50%; border-color: white; margin-right: 5px; margin-top: 5px; border-radius: 50%;cursor: pointer;">
+            X</div>
+        <section>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Cadastre-se!</legend>
+                    <label for="nomeCompleto">Seu nome</label>
+                    <input type="text" name="nomeCompleto" id="nomeCompleto">
+
+                    <label for="email" name="email">Seu email</label>
+                    <input type="text" name="email" id="email">
+
+                    <input class="submit" name="submit" id="submit" value="Concluir" onclick="validar()"
+                        style="background-color: rgb(14, 14, 26); border-radius: 15px; border: 1px solid white;color: white; display: block; cursor: pointer; margin-top: 5%; width: 20%; height: 20px; text-align: center;">
+                    <span id="resultado"></span>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</section>
+</main>
+<footer>
+    <div id="follow_us">
+        <h4>Conecte-se com a gente</h4>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i>Nos siga no
+            Instagram</a>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i>Nos curta no
+            Facebook</a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i>Nos siga no Twitter</a>
+    </div>
+    <div id="contact">
+        <h4>Mais informações</h4>
+        <a href="."><span>Sobre</span></a>
+        <a href="."><span>Ajuda</span></a>
+        <a href="."><span>Contato</span></a>
+    </div>
+</footer>
+<section id="footer2">
+    <span>
+        Copyright &copy; WebMaster 2020. Todos os direitos reservados a Gustavo Faustino.
+    </span>
+</section>
+<script>
+    document.fgColor = 'white';
+</script>
+
+<script type="text/javascript" src="js/function.js"></script>
+</body>
+
+</html>

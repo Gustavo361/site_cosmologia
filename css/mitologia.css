@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: auto;
+    transition: 1s;
+}
+body{
+    background-color: rgb(14, 14, 26);
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+p{
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header{
+    height:550px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    position:relative;
+    background-image: url(../img/wp_universe_stars2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-bottom: white 1px solid;
+}
+
+header #logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 500px;
+    
+}
+nav{
+    width: 45%;
+    height: 50px;
+    border-bottom: 1pt solid white;
+}
+nav ul{
+    width: 98%;
+    height: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 3px;
+}
+nav ul li a{
+    list-style: none;
+    display: block;
+   
+}
+nav ul li a:hover{
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#titulo_site{
+    margin-top: 270px;
+    margin-left:10px;
+    position: absolute;
+}
+
+
+
+
+
+/*cards dos planetas*/
+
+
+
+/*------------------*/
+#section1{
+    background-color: rgb(14, 14,26);
+}
+.container{ /*sempre certo*/
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: rgb(14, 14, 26);
+    height: 15%;
+}
+.container .card{
+    position: relative;
+    max-width:300px;
+    height: 150px;
+    background-color: rgb(14, 14,26);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    border: 1pt solid white;
+    top: 5px;
+    margin-bottom: 60px;
+}
+.container .card:hover{
+    height: 420px;
+    margin-bottom: 60px;
+}
+.container .card .imgBox{
+    width: 260px;
+    height: 260px;
+    margin-top: -110px; /*-150px*/
+    margin-left: 60px; /*20px*/
+    z-index: 1;
+}
+.container .card #imgr136a1{
+    margin-top: -100px; /*-150px*/
+    margin-left: 67px; /*20px*/
+    z-index: 1;
+}
+
+.container .card #imgkepler-438b_2{
+    margin-top: -100px; /*-150px*/
+    margin-left: 60px; /*20px*/
+    z-index: 1;
+}
+.container .card .imgBox img{
+    max-width: 100%;
+}
+.container .card .content{
+    position: relative;
+    margin-top:-70px; /*-50px*/
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:  0.3s ease-in-out;
+}
+.container .card #content12{
+    position: relative;
+    margin-top:10px; /*-50px*/
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:  0.3s ease-in-out;
+}
+.container .card:hover #content12{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 1000;
+    transition-delay: 0.3s;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 1000;
+    transition-delay: 0.3s;
+}
+
+.container .card .phrase{
+    position: relative;
+    margin-top:1px;
+    margin-left: 30%;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s ease-in-out;
+}
+.container .card:hover .phrase{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.card-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(14, 14,26);
+    visibility: hidden;
+    transition: 0s;
+    margin-top: 1px;
+    transition:  0s ease-in-out;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.container .card:hover .card-stats{
+    width: 330px;
+    margin-left: -15px;
+    margin-right: 0px;
+    margin-top: 382px;
+    position:absolute;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.card-stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+.card-stats .type{
+    font-size: 11px;
+    font-weight: 300;
+    /*text-transform: lowercase;*/
+}
+.card-stats .value{
+    font-size: 17px;
+    font-weight: 500;
+}
+.card-stats .border{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.card-stats .value sup{
+    font-size: 12px;
+}
+
+
+#section_estrelas{
+    position: absolute;
+    background-color: skyblue;
+}
+#section_exo_plnt{
+    position: absolute;
+    margin-top: 700px;
+}
+#lua{
+    width: auto;
+    height: auto;
+}
+#section_buraco_negro{
+    width: auto;
+    height: auto;
+}
+#section_tres_nomes{
+    height:600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(14, 14, 26);
+}
+#section_tres_nomes #nome1{
+    height: 600px;
+    width: 28.5%; 
+    background-color: blue;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#section_tres_nomes #nome2{
+    height: 600px;
+    width: 28.5%;
+    background-color: rgb(225, 0, 255);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#section_tres_nomes #nome3{
+    height: 600px;
+    width: 28.5%;
+    background-color: rgb(88, 105, 47);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#form{
+    height: 230px;
+    width: 100%;
+    background-color:rgb(23, 23, 39); /*rgb(14, 14,26);*/
+}
+#form #form_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#form h3{
+    font-size: x-large; /*diminuir no mobile*/
+    font-weight: 700;
+}
+#form #gratis{
+    margin-top: 2%;
+}
+#form button{
+   height: 35px;
+   margin-top: 3%;
+   border-radius: 20px;
+   border-color: red;
+}
+#form button:hover{
+    background-color: rgb(14, 14, 26);
+    color: white;
+}
+footer{
+    height: 150px;
+    background-color:rgb(14, 14,26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+footer #follow_us{
+    height: 150px;
+    width: 15%; /*15%*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+footer #contact{
+    height: 150px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+footer #copy_right{
+    height: 100px;
+}
+footer i{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+footer i:hover {
+    background-color: darkslategrey;
+}
+#footer2{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#social_medias{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+#social_medias .sm_card{
+    height:500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    background-color: silver;
+    border: 1px solid black;
+
+}
+#social_medias .sm_img{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    background-color: white; 
+}
+#social_medias .sm_name{
+    margin-bottom: 12px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+/*card sistema solar*/
+
+#section_sisSolar .container{ /*sempre certo*/
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    height: auto;
+    margin-top: 100px;
+}
+#section_sisSolar .container .card{
+    position: relative;
+    max-width:900px;
+    height: 180px;
+    background-color: rgb(14, 14,26);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    border: 1pt solid white;
+    top: 5px;
+    margin-bottom: 60px;
+}
+#section_sisSolar .container .card:hover{
+    height: 420px;
+    margin-bottom: 60px;
+}
+
+.container .card  .nome_plnts {
+    visibility: visible;
+    transition: 0.2s;
+}
+.container .card:hover  .nome_plnts{
+    visibility: hidden;
+    margin-top: -40px;
+}
+.container .card #content_sisSolar{
+    position: relative;
+    margin-top:10px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:  0.3s ease-in-out;
+}
+#section_sisSolar .card:hover #content_sisSolar{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 1000;
+    transition-delay: 0.3s;
+}
+#section_sisSolar .card #img_sisSolar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -160px; /*-150px*/
+    margin-left: 200px; /*20px*/
+    z-index: 1;
+}
+#section_sisSolar .card .phrase{
+    position: relative;
+    margin-top: 1px;
+    margin-left: 43%;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s ease-in-out;
+}
+#section_sisSolar .card:hover .phrase{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+#section_sisSolar .card-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(14, 14,26);
+    visibility: hidden;
+    transition: 0s;
+    margin-top: 1px;
+    transition:  0s ease-in-out;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#section_sisSolar .container .card:hover .card-stats{
+    width: 100%;
+    margin-left: -15px;
+    margin-right: 0px;
+    margin-top: 382px;
+    position:absolute;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+#section_sisSolar .card-stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+#section_sisSolar .card-stats .type{
+    font-size: 11px;
+    font-weight: 300;
+    /*text-transform: lowercase;*/
+}
+#section_sisSolar .card-stats .value{
+    font-size: 17px;
+    font-weight: 500;
+}
+#section_sisSolar .card-stats .border{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#section_sisSolar .card-stats .value sup{
+    font-size: 12px;
+}
+/*fim da formatação do card do sistema solar*/
